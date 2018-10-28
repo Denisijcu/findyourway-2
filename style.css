@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+.start {
+  background-color: red;
+}
+
+.end {
+  background-color: red;
+}
+
+.black {
+  background-color: black;
+  max-width: 50px;
+  color: white;
+}
+
+.green {
+  background-color: green;
+  max-width: 50px;
+}
+
+.red {
+  background-color: red;
+  border-radius: 0%;
+  margin: 8px;
+  box-shadow: 4px 4px 4px;
+  animation-name: root;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.red:hover {
+  background-color: blue;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px;
+  background-image: url('miky.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+@keyframes root {
+  from {
+    background-color: white;
+    transform: rotateZ(360deg);
+  }
+
+  to {
+    background-color: red;
+    transform: rotateZ(0deg);
+  }
+}
+
+.yellow {
+  background-color: yellow;
+  max-width: 50px;
+  color: black;
+}
+
+.container {
+  position: relative;
+  left: 35%;
+  margin-bottom: 5%;
+}
+
+.btn {
+  position: absolute;
+  top: 80%;
+  left: 43%;
+  width: 200px;
+  height: 50px;
+  background: green;
+}
+
+#cors {
+  float: left;
+  top: 10%;
+}
+
+#lab {
+  top: 15%;
+  float: left;
+  width: 660px;
+  margin: 20px;
+}
+
+#cors {
+  float: left;
+  width: 200px;
+  margin: 10px 0px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.tableCoors {
+  padding: 2px;
+  text-align: center;
+
+}
+
+h1 {
+  position: fixed;
+  top: 0%;
+  left: 38%;
+  text-align: center;
+}
+
+@media only screen and (max-width:479px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: teal;
+    left: 0;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    left: 15%;
+
+  }
+
+  .container {
+    margin-top: 15%;
+    margin-left: 0px;
+    left: 0px;
+
+  }
+
+  #cors {
+    position: relative;
+    margin-left: 25px;
+  }
+
+  .start {
+    background-color: red;
+  }
+
+  .btn {
+    background: green;
+    top: 45px;
+    width: 20vw;
+    height: 7vw;
+    right: 0px;
+  }
+
+}
